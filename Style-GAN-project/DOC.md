@@ -97,9 +97,9 @@ face_edit_app
     │ 
     ├── controller.py           - high-level functionality for the app
     |
-    ├── run.py    				- application run file.
+    ├── run.py                  - application run file.
     |
-    └── requirements.txt		- list of libraries for the project
+    └── requirements.txt        - list of libraries for the project
 ```
 Now it's time for you to define the structure by carrying it to your local machine!
 
@@ -1194,3 +1194,72 @@ The interface of the project should look like this:
 ![interface1](https://dru.fra1.digitaloceanspaces.com/DL_pytorch/static/ntbk_images/interface1.png)
 ![interface2](https://dru.fra1.digitaloceanspaces.com/DL_pytorch/static/ntbk_images/interface2.png)
 ![interface3](https://dru.fra1.digitaloceanspaces.com/DL_pytorch/static/ntbk_images/interface3.png)
+
+
+To submit your project to the bot you need to compress your project to `.zip` with the following structure (validator will not accept archive with a different structure):
+
+```
+face_edit_app.zip
+    ├──  core                   
+    │   ├── align_faces.py      
+    │   ├── generator.py        
+    │   ├── projector.py        
+    |   └── shifter.py          
+    │
+    │
+    ├──  generated              
+    │   ├── ptoj.mp4            
+    │   ├── proj.png            
+    |   └── projected_w.npy     
+    │
+    │
+    ├── gui                     
+    │   ├── layouts             
+    │   │   ├── interface.py    
+    │   │   ├── sliders.py      
+    │   │   └── project.py      
+    │   │   
+    │   └── main.py             
+    │   
+    │   
+    ├── input_imgs              
+    │   ├── myimg.png           
+    │   └── myimg_aligned.png   
+    │ 
+    │ 
+    ├── models                  
+    │   ├── ffhq.pkl            
+    │   └── face_landmarks.dat  
+    │ 
+    │ 
+    ├── settings                
+    │   ├── __ini__.py          
+    │   └── config.py           
+    │ 
+    │ 
+    ├── stylegan2-ada-pytorch   
+    │   └── ...
+    │ 
+    │ 
+    ├── utils                   
+    │   ├── __init__.py         
+    │   └── helpers.py          
+    │ 
+    │ 
+    ├── vectors                 
+    │   ├── age.npy             
+    │   ├── gender.npy          
+    │   └── ...
+    │ 
+    │ 
+    ├── controller.py           
+    |
+    ├── run.py                  
+    |
+    └── requirements.txt              
+```
+
+
+Upload it to your ***Google Drive***. Use instructions from the `DRU-bot` and submit the command - then you'll receive results.
+
+If you have any questions, write `@DRU Team` in Slack!
